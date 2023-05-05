@@ -1,0 +1,6 @@
+.board {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 260px;
+  width: 260px;
+}

@@ -1,0 +1,20 @@
+.game {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.board-container {
+  width: 60%;
+}
+
+.history-container {
+  width: 40%;
+}
+
+.board-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

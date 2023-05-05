@@ -1,0 +1,14 @@
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 8px;
+  background-color: black;
+  font-family: "Lilita One", cursive;
+  font-size: 40px;
+  margin: 4px;
+  border: none;
+  cursor: pointer;
+}
