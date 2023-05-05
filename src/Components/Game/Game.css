@@ -9,12 +9,17 @@
   width: 60%;
 }
 
-.history-container {
-  width: 40%;
-}
-
 .board-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  .game {
+    flex-direction: column;
+  }
+  .board-container {
+    margin-bottom: 20px;
+  }
 }

@@ -18,7 +18,7 @@ li {
   background-color: #4c3575;
   border: none;
   border-radius: 4px;
-  height: 30px;
+  height: max-content;
   font-style: oblique;
   font-size: larger;
 }
