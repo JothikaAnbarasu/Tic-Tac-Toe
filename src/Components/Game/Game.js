@@ -47,6 +47,10 @@ function Game() {
     setCurrentMove(nextMove);
   }
 
+  const resetGame = () => {
+    setHistory([Array(9).fill(null)]);
+    setCurrentMove(0);
+  }
 
   return (
     <div className='game'>
@@ -55,12 +59,16 @@ function Game() {
         <div className="board-wrapper">
           <Board xIsNext={xIsNext} onPlay={handlePlay} squares={currentSquares}
             calculateWinner={calculateWinner} />
-        </div>
+        </div>{
+          (isDraw || winner) &&
+          (<div className="play-again-btn-container">
+            <button className='play-again-btn' onClick={resetGame}>Play Again!</button>
+          </div>)
+        }
+
       </div>
       <div className="history-container">
-
         <History history={history} jumpTo={jumpTo} />
-
       </div>
     </div>
 

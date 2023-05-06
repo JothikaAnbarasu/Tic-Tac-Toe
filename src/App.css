@@ -16,3 +16,9 @@ body {
 .app-header span {
   color: rgb(247, 180, 32);
 }
+
+@media (max-width: 768px) {
+  .app-header {
+    margin-bottom: 4px;
+  }
+}
