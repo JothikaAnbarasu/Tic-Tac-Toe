@@ -16,13 +16,13 @@ function Status({ winner, xIsNext, isDraw }) {
   return (
     <div className="status">{
 
-      winner ? (<p> <span style={winnerStyle} >{winner}</span> won the game!</p>) :
+      winner ? (<p style={{ color: "#32cd32" }}> <span style={winnerStyle} >{winner}</span> won the game!</p>) :
         (
-          isDraw ? (<p>It's a draw!</p>) :
+          isDraw ? (<p className='draw'>It's a draw!</p>) :
             (<p>It's <span style={turnStyle} > {xIsNext ? 'X' : 'O'}</span>'s turn!</p>)
         )
     }
-    </div>
+    </div >
   )
 }
 

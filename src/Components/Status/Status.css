@@ -4,3 +4,10 @@
   font-size: 2.5rem;
   font-style: italic;
 }
+
+.draw {
+  background: -webkit-linear-gradient(rgb(247, 180, 32), rgb(20, 146, 206));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+}
